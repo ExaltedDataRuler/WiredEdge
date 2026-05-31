@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-cyan: #00ffcc;
+  --neon-mag: #ff00aa;
+  --deep: #0a0814;
+  --void: #06040c;
+}
+
+body {
+  background: var(--void);
+  color: #e4dff0;
+}
+
+.neon-text {
+  text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.neon-btn {
+  border: 1px solid var(--neon-cyan);
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  transition: all 0.2s;
+}
+
+.neon-btn:hover {
+  background: var(--neon-cyan);
+  color: #000;
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
